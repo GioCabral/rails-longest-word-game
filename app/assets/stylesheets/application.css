@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+div{
+  display: flex;
+  flex-direction: row;
+}
+button{
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(44, 51, 255);
+  color: white;
+  font-size: larger;
+}

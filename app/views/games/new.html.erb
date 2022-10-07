@@ -1,0 +1,18 @@
+
+<h1>JOGO DAS PALAVRAS</h1>
+<div>
+
+  <% @new_aphabet.each do |letter|%>
+  <button ><%= letter %></button>
+  <% end %>
+
+</div>
+<div>
+  <form action="/score" method="POST" data-turbo="false">
+    <input type="text" name="word">
+    <input type="submit" value="Ask!">
+
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :new_aphabet, @new_aphabet %>
+  </form>
+</div>
